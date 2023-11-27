@@ -13,12 +13,12 @@
 
 :focus,
 :active {
-  outline: none;
+  /*outline: none;*/
 }
 
 a:focus,
 a:active {
-  outline: none;
+  /* outline: none;*/
 }
 
 /* Links */
@@ -349,10 +349,6 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: var(--dark-bg);
-  background-image: url("./../img/header-bg.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center center;
   color: var(--header-text);
   text-align: center;
 }
@@ -362,6 +358,17 @@ html, body {
   max-width: 660px;
 }
 
+.hero__img {
+  position: absolute;
+  transition: all ease 0.5s;
+  animation: test infinite 3s linear;
+}
+
+@keyframes test {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header__title {
   margin-bottom: 20px;
   font-size: 40px;
